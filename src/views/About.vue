@@ -56,7 +56,7 @@
 import { Component, Vue} from 'vue-property-decorator';
 
 @Component
-export default class About extends Vue{
+export default class About extends Vue {
   private inputvalue: string = '你好';
   private objvalue: object = { name: '张三' };
   private list = [1, 2, 3];
@@ -96,7 +96,7 @@ export default class About extends Vue{
     alert(this.$refs.userinfo.value);
     this.$refs.box.style.background = 'red';
   }
-  private eventFn(e) {
+  private eventFn(e: any) {
     // console.log(e);
     alert(e.srcElement.dataset.aid);
   }
